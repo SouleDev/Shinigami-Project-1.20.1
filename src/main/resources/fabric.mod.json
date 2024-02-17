@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "shinigami-project",
+	"version": "${version}",
+	"name": "Shinigami Project",
+	"description": "Immerse yourself in the fast-paced world of Bleach like never before, where every detail has been optimized for seamless gameplay and limitless customization options.",
+	"authors": [
+		"Souleful!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/shinigami-project/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.souleful.shinigamiproject.ShinigamiProject"
+		],
+		"client": [
+			"net.souleful.shinigamiproject.ShinigamiProjectClient"
+		],
+		"fabric-datagen": [
+			"net.souleful.shinigamiproject.ShinigamiProjectDataGenerator"
+		]
+	},
+	"mixins": [
+		"shinigami-project.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
